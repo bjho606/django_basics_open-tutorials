@@ -20,5 +20,6 @@ from first_django_app import views
 urlpatterns = [
     path('', views.index),           # 사용자가 홈으로 들어왔다 (아무것도 없는 경로로 들어옴)
     path('create/', views.create),    # 사용자가 create로 들어왔다
-    path('read/<id>/', views.read)     # 사용자가 read/<id>으로 들어왔다
+    path('read/<id>/', views.read),     # 사용자가 read/<id>으로 들어왔다
+    path('delete/', views.delete),
 ]
