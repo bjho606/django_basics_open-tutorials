@@ -22,3 +22,4 @@ ex) django-admin startproject myproject .
 
 ## ※ Django Structure
 ![django structure](images/structure.png)
+- Routing : Client Request -> project route -> app route -> app view -> (처리) -> Client Response (HttpResponse)

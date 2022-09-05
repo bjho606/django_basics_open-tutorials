@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from first_django_app import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('first_django_app.urls'))  # 사용자가 admin/ 이 아닌 다른 경로로 접속했을 때, first_django_app.urls 로 위임할 것이다.
+    path('', views.index),           # 사용자가 홈으로 들어왔다 (아무것도 없는 경로로 들어옴)
+    path('create/', views.create),    # 사용자가 create로 들어왔다
+    path('read/<id>/', views.read)     # 사용자가 read/<id>으로 들어왔다
 ]
