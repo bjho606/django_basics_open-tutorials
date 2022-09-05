@@ -22,4 +22,5 @@ urlpatterns = [
     path('create/', views.create),    # 사용자가 create로 들어왔다
     path('read/<id>/', views.read),     # 사용자가 read/<id>으로 들어왔다
     path('delete/', views.delete),
+    path('update/<id>/', views.update),
 ]
